@@ -1,0 +1,36 @@
+{
+    "name": "truevaultjs",
+    "description": "TrueVault Client for node.js",
+    "version": "0.1.0",
+    "author": {
+        "name":"Nafis Zebarjadi",
+        "email":"nafisto@gmail.com"
+    },
+    "homepage": "https://github.com/medicast/truevaultjs",
+    "directories" : { "lib" : "./lib" },
+    "main" : "./lib/main",
+    "engines": { "node": ">= 0.6.x" },
+    "dependencies": {
+        "restify" : "latest"
+    },
+    "devDependencies": {
+        "mocha" : "latest",
+        "should" : "latest"
+    },
+    "repository": {
+        "type" : "git",
+        "url": "git://github.com/medicast/truevaultjs"
+    },
+   "bugs" : {
+        "url" : "http://github.com/medicast/truevaultjs/issues",
+        "mail" : ""
+    },
+    "licenses": [{
+        "type": "Apache 2.0",
+        "url": "http://github.com/medicast/truevaultjs/raw/master/LICENSE.txt"
+    }],
+    "keywords": [
+    ],
+    "scripts" : {
+    }
+}
