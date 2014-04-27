@@ -9,7 +9,7 @@
     "example": "examples",
     "test": "test"
   },
-  "main": "./lib/main",
+  "main": "./lib/truevault",
   "engines": {
     "node": ">= 0.6.x"
   },
