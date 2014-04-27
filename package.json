@@ -1,7 +1,7 @@
 {
   "name": "truevaultjs",
   "description": "TrueVault Client for node.js",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Nafis Zebarjadi <nafisto@gmail.com>",
   "homepage": "https://github.com/medicast/truevaultjs",
   "directories": {

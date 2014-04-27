@@ -22,18 +22,85 @@ var TrueVault = require('truevaultjs');
 var client = new TrueVault('secure_api_key');
 
 var mydoc = { secure: 'data', isPHI: true };
-client.create(vaultId,mydoc,function(err,result) {
+client.json.create(vaultId,mydoc,function(err,result) {
     console.log(result.document_id);
 });
 
 mydoc.newField = 12345;
-client.update(vaultId,mydoc,function(err) {});
+client.json.update(vaultId,mydoc,function(err) {});
 
-client.get(vaultId,documentId,function(err,document) {
+client.json.get(vaultId,documentId,function(err,document) {
     assert.equal(mydoc,document);
 });
 
-client.del(vaultId,documentId,function(err) {});
+client.json.del(vaultId,documentId,function(err) {});
+
+```
+
+## API
+
+The API is designed to closely mirror the [TrueVault REST API](https://www.truevault.com/rest-api.html).  The client handles authentication headers as well as Base64 encoding and decoding, so all you need to do is plug in your own API key (from the TrueVault Users dashboard), vault ID (also created and managed in the dashboard), and content.
+
+### Initialization
+
+```js
+
+var TrueVault = require('truevaultjs');
+var client = new TrueVault('secure_api_key');	// replace with your own
+
+```
+
+### JSON (Document) Store
+
+```js
+
+client.json.create(vaultId,document,callback)
+client.json.update(vaultId,documentId,document,callback)
+client.json.del(vaultId,documentId,callback)
+client.json.get(vaultId,documentId,callback)
+
+```
+
+### BLOB Store
+
+```js
+
+client.blob.create(vaultId,document,callback)
+client.blob.update(vaultId,documentId,blob,callback)
+client.blob.del(vaultId,documentId,callback)
+client.blob.get(vaultId,documentId,callback)
+
+```
+
+### Schema Store
+
+```js
+
+client.json.create(vaultId,document,callback)
+client.json.update(vaultId,documentId,document,callback)
+client.json.del(vaultId,documentId,callback)
+client.json.get(vaultId,documentId,callback)
+client.json.all(vaultId,callback)
+
+```
+
+### Search Engine
+
+NOTE: This hasn't been fully implemented yet, so the API is likely to change.
+
+```js
+
+client.json.find(vaultId,query,callback)
+
+```
+
+### Callbacks
+
+The callback signature follows the typical Node.js form:
+
+```js
+
+callback = function(err,value) {}
 
 ```
 
