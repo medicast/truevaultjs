@@ -1,4 +1,4 @@
-# TrueVault Client Library for Node.js 
+# TrueVault Client Library for Node.js
 
 An unofficial JavaScript implementation of the [TrueVault REST API](https://www.truevault.com/rest-api.html).
 
@@ -6,7 +6,7 @@ An unofficial JavaScript implementation of the [TrueVault REST API](https://www.
 
 ## Installing
 
-Use 
+Use
 [npm](http://npmjs.org) to install into your Node.js. Simply include "truevaultjs" as a dependency or type the following into a terminal window:
 
 ```sh
@@ -107,7 +107,7 @@ callback = function(err,value) {}
 
 ## Plain-English Disclaimer
 
-HIPAA compliance is very complicated.  The authors and contrbutors of this client library cannot guarantee that by using it, you will be compliant.  Please consult experts to make sure you are doing this right!
+HIPAA compliance is very complicated.  The authors and contributors of this client library cannot guarantee that by using it, you will be compliant.  Please consult experts to make sure you are doing this right!
 
 ## License
 
