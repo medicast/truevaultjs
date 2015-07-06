@@ -94,15 +94,33 @@ client.json.find(vaultId,query,callback)
 
 ```
 
-### Callbacks
+### Callbacks and Promises
 
-The callback signature follows the typical Node.js form:
+All methods can take a callback as the final argument.  The callback signature follows the typical Node.js form:
 
 ```js
 
-callback = function(err,value) {}
+var callback = function(err,result) {}
+client.json.create('some-vault-id',{ this: 'is', my: 'document' }, callback);
 
 ```
+
+If a callback is not provided, methods will return a promise that will be fulfilled as soon as the asynchronous call is completed:
+
+```js
+
+client.json
+    .create('some-vault-id'),{ this: 'is', my: 'document' })
+    .then(function(result) {
+        // promise resolved, i.e. success
+    }, function(reason) {
+        // promise rejected, i.e. failure
+    })
+    // ...promise chain...
+
+```
+
+(For more information, check out the [Promises/A+ spec](https://promisesaplus.com/) and the documentation for the excellent [Q library](https://github.com/kriskowal/q)).
 
 
 ## Plain-English Disclaimer
