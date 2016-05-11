@@ -14,7 +14,7 @@
     "node": ">= 0.6.x"
   },
   "dependencies": {
-    "restify": "2.7.x"
+    "restify": "^4.0.4"
   },
   "devDependencies": {
     "mocha": "1.18.x",
