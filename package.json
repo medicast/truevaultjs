@@ -4,22 +4,14 @@
   "version": "0.2.5",
   "author": "Nafis Zebarjadi <nafisto@gmail.com>",
   "homepage": "https://github.com/medicast/truevaultjs",
-  "directories": {
-    "doc": "docs",
-    "example": "examples",
-    "test": "test"
-  },
   "main": "./lib/truevault",
   "engines": {
     "node": ">= 0.6.x"
   },
   "dependencies": {
-    "restify": "^4.0.4"
+    "restify-clients": "2.2.0"
   },
-  "devDependencies": {
-    "mocha": "1.18.x",
-    "should": "3.3.x"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/medicast/truevaultjs"
