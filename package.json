@@ -11,7 +11,9 @@
   "dependencies": {
     "restify-clients": "2.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "standard-version": "4.4.0"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/medicast/truevaultjs"
@@ -26,6 +28,8 @@
     }
   ],
   "keywords": [],
-  "scripts": {},
+  "scripts": {
+    "release": "standard-version"
+  },
   "license": "MIT"
 }
