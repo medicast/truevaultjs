@@ -1,5 +1,5 @@
 {
-  "name": "truevaultjs",
+  "name": "@medicast/truevaultjs",
   "description": "TrueVault Client for node.js",
   "version": "1.0.0",
   "author": "Nafis Zebarjadi <nafisto@gmail.com>",
@@ -31,5 +31,5 @@
   "scripts": {
     "release": "standard-version"
   },
-  "license": "MIT"
+  "license": "UNLICENSED"
 }

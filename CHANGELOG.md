@@ -14,18 +14,3 @@ All notable changes to this project will be documented in this file. See [standa
 ### BREAKING CHANGES
 
 * moving to restify-client
-
-
-
-<a name="0.2.5"></a>
-## 0.2.5 (2018-06-14)
-
-
-### Chores
-
-* upgrade restify and remove unused testing packages ([06ecc05](https://github.com/medicast/truevaultjs/commit/06ecc05))
-
-
-### BREAKING CHANGES
-
-* moving to restify-client
